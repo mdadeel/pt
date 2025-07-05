@@ -27,48 +27,71 @@
     <section class="menu" id="menu">
         <h2>Our Menu</h2>
         <div class="menu-items">
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Espresso">
+            <div class="menu-item" data-detail="espresso">
+                <div class="card-top">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Espresso">
+                    <span class="price">$2.50</span>
+                </div>
                 <h3>Espresso</h3>
-                <p class="price">$2.50</p>
-                <p class="desc">Rich and bold, our classic espresso is the perfect pick-me-up for any time of day.</p>
                 <ul class="details">
                     <li>Intensity: <span>Strong</span></li>
                     <li>Origin: <span>Colombia</span></li>
                 </ul>
+                <button class="detail-btn" data-detail="espresso">Details</button>
             </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Cappuccino">
+            <div class="menu-item" data-detail="cappuccino">
+                <div class="card-top">
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Cappuccino">
+                    <span class="price">$3.00</span>
+                </div>
                 <h3>Cappuccino</h3>
-                <p class="price">$3.00</p>
-                <p class="desc">A creamy blend of espresso and steamed milk, topped with a cloud of foam.</p>
                 <ul class="details">
                     <li>Intensity: <span>Medium</span></li>
                     <li>Origin: <span>Brazil</span></li>
                 </ul>
+                <button class="detail-btn" data-detail="cappuccino">Details</button>
             </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Latte">
+            <div class="menu-item" data-detail="latte">
+                <div class="card-top">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Latte">
+                    <span class="price">$3.50</span>
+                </div>
                 <h3>Latte</h3>
-                <p class="price">$3.50</p>
-                <p class="desc">Smooth espresso with steamed milk and a touch of foam for a mellow taste.</p>
                 <ul class="details">
                     <li>Intensity: <span>Mild</span></li>
                     <li>Origin: <span>Guatemala</span></li>
                 </ul>
+                <button class="detail-btn" data-detail="latte">Details</button>
             </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Mocha">
+            <div class="menu-item" data-detail="mocha">
+                <div class="card-top">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Mocha">
+                    <span class="price">$3.75</span>
+                </div>
                 <h3>Mocha</h3>
-                <p class="price">$3.75</p>
-                <p class="desc">A delicious fusion of espresso, chocolate, and steamed milk, topped with whipped cream.</p>
                 <ul class="details">
                     <li>Intensity: <span>Medium</span></li>
                     <li>Origin: <span>Peru</span></li>
                 </ul>
+                <button class="detail-btn" data-detail="mocha">Details</button>
             </div>
         </div>
     </section>
+    <section class="gallery" id="gallery">
+        <h2>Our Coffee Shop</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Shop 1">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Shop 2">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Shop 3">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Shop 4">
+        </div>
+    </section>
+    <div class="detail-modal" id="detailModal">
+        <div class="detail-content" id="detailContent">
+            <button class="close-detail" id="closeDetail">&times;</button>
+            <div id="detailBody"></div>
+        </div>
+    </div>
     <section class="about" id="about">
         <h2>About Us</h2>
         <p>Coffee Haven is your cozy neighborhood spot for the finest brews, friendly faces, and a relaxing atmosphere. We source our beans ethically and brew every cup with love.</p>
